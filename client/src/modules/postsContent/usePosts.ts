@@ -18,7 +18,7 @@ export const usePosts = () => {
     limit: layoutCols * layoutRows,
     enabled: !!isSettingsReady && settings?.navigation === 'load-more',
   });
-  const { postsData, isPostsFetching } = usePostsQuery({
+  const { postsData } = usePostsQuery({
     page: page,
     limit: layoutCols * layoutRows,
     enabled: !!isSettingsReady && settings?.navigation === 'pagination',
@@ -42,10 +42,10 @@ export const usePosts = () => {
   useEffect(() => {
     if (!isSettingsReady) {
       setLoading(true);
-    } else if (!isInfPostsFetching || !isPostsFetching) {
+    } else if (!isInfPostsFetching) {
       setLoading(false);
     }
-  }, [isSettingsReady, isInfPostsFetching, isPostsFetching]);
+  }, [isSettingsReady, isInfPostsFetching]);
 
   return {
     isLoading,
