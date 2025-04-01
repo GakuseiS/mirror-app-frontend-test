@@ -10,7 +10,7 @@ export default defineConfig({
       targets: ['defaults', 'not IE 11'],
     }),
   ],
-  base: '/mirror-app/',
+  base: '/mirror-app-frontend-test/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
