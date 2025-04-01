@@ -1,0 +1,46 @@
+.button {
+    display            : flex;
+    gap                : 8px;
+    width              : 100%;
+    border             : none;
+    cursor             : pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.3s;
+    align-items        : center;
+    justify-content    : center;
+
+    &.sm {
+        height       : 32px;
+        padding      : 0 12px;
+        font-size    : 12px;
+        border-radius: 8px;
+    }
+
+    &.md {
+        height       : 40px;
+        padding      : 0 16px;
+        border-radius: 12px;
+    }
+
+    &.secondary {
+        color           : var(--white);
+        background-color: var(--dark-gray-2);
+
+        &:hover {
+            filter: brightness(90%);
+        }
+    }
+
+    &.primary {
+        color           : var(--white);
+        background-color: var(--blue);
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    &.fitContent {
+        width: fit-content;
+    }
+}

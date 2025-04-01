@@ -1,0 +1,18 @@
+.content {
+    position     : relative;
+    display      : grid;
+    align-content: flex-start;
+    padding      : 24px;
+    flex-grow    : 1;
+
+    .cards {
+        display      : grid;
+        align-content: flex-start;
+        gap          : 4px;
+    }
+
+}
+
+.pagination {
+    margin-top: 24px;
+}

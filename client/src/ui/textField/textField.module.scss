@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    gap    : 4px;
+
+    .label {
+        color    : var(--light-gray);
+        font-size: 12px;
+    }
+
+    .field {
+        display            : flex;
+        align-items        : center;
+        height             : 32px;
+        padding            : 0 8px;
+        color              : var(--white);
+        font-size          : 14px;
+        border-radius      : 8px;
+        background-color   : var(--dark-gray);
+        transition-property: background-color;
+        transition-duration: 0.3s;
+        cursor             : default;
+
+        &:hover {
+            background-color: var(--dark-gray-2);
+        }
+    }
+}

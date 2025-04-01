@@ -1,0 +1,49 @@
+.pagination {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    gap            : 8px;
+    list-style     : none;
+
+    .next,
+    .previous {
+        display: none;
+    }
+
+    .page {
+        a {
+            display            : flex;
+            align-items        : center;
+            justify-content    : center;
+            width              : 36px;
+            height             : 36px;
+            border-radius      : 12px;
+            font-size          : 14px;
+            line-height        : 24px;
+            cursor             : pointer;
+            background-color   : var(--black);
+            color              : var(--white);
+            transition-property: opacity;
+            transition-duration: 0.3s;
+        }
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .selected {
+        a {
+            background-color: var(--blue);
+
+        }
+    }
+
+    .break {
+        a {
+            display   : inline-block;
+            margin-top: 5px;
+        }
+        cursor: pointer;
+    }
+}

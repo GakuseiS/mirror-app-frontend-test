@@ -1,0 +1,18 @@
+.grid {
+    display      : grid;
+    align-content: flex-start;
+    gap          : 4px;
+}
+
+.masonry {
+    display: flex;
+    gap    : 4px;
+    width  : 100%;
+
+    .masonryCol {
+        display       : flex;
+        flex          : 1 1 0;
+        flex-direction: column;
+        gap           : 4px;
+    }
+}

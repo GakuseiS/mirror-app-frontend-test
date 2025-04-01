@@ -1,0 +1,12 @@
+.panel {
+    position        : relative;
+    min-height      : 100vh;
+    padding         : 16px;
+    background-color: var(--black);
+
+    .fieldset {
+        display   : grid;
+        gap       : 8px;
+        margin-top: 24px;
+    }
+}

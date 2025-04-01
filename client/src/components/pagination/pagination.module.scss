@@ -1,0 +1,14 @@
+.pagination {
+    display        : flex;
+    justify-content: center;
+
+    .page {
+        &:first-of-type {
+            display: none;
+        }
+
+        &:last-of-type {
+            display: none;
+        }
+    }
+}
